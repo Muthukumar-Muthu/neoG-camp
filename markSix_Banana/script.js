@@ -1,18 +1,13 @@
 const button = document.querySelector("#submit");
 const input = document.querySelector("#input");
 const output = document.querySelector("#output");
-console.clear();
 
 button.addEventListener("click", () => {
-  console.log(input.value);
-
   setTranslate(input.value);
 });
 
-input.addEventListener("input", function chnage(e) {
+input.addEventListener("input", (e) => {
   output.value = "";
-
-  console.log("input inputed");
 });
 function setTranslate(value) {
   let translated = null;
