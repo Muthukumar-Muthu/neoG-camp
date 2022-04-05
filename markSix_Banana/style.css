@@ -22,7 +22,8 @@ body {
 h1 {
   margin-block-end: 0.5em;
 }
-label {
+label,
+button {
   color: #443400;
   background-color: #f9d564;
   font-weight: bolder;
@@ -50,6 +51,7 @@ button {
   text-align: center;
   cursor: pointer;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: thin solid #70602a;
 }
 footer {
   background-color: #f9d564;
