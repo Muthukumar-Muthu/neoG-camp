@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("minion.png");
+  font-family: "Karla", sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 650px;
+  min-width: 200px;
+  margin: auto;
+  margin-top: 0.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  margin-block-end: 0.5em;
+}
+label {
+  color: #443400;
+  background-color: #f9d564;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+textarea {
+  display: block;
+  margin: auto;
+  width: 100%;
+  min-width: 450px;
+  min-height: 175px;
+  background-color: inherit rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  margin: 20px 0;
+  padding: 1rem;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#output {
+  resize: none;
+}
+button {
+  max-width: 100px;
+  padding: 0.5rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+  background-color: #f9d564;
+  margin-block: 1rem;
+  text-align: center;
+}
+p {
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+a {
+  padding: 0.5rem;
+}
