@@ -1,30 +1,34 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-image: url("minion.png");
   font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .wrapper {
   width: 80%;
-  max-width: 650px;
+  margin-top: 1rem;
+}
 
-  margin: auto;
-  margin-top: 0.5rem;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.wrapper > div,
+button {
+  padding: 1rem;
 }
 h1 {
-  margin-block-end: 0.5em;
   text-align: center;
+  margin-bottom: 1rem;
+  background-color: #f7f7f7;
 }
 label,
 button {
+  margin-bottom: 1rem;
   color: #443400;
   background-color: #f9d564;
   font-weight: bolder;
@@ -32,29 +36,22 @@ button {
 }
 textarea {
   display: block;
-  margin: auto;
-  width: 100%;
-  min-width: 450px;
-  min-height: 175px;
+  padding: 1em 0.5em;
   background-color: inherit rgba(0, 0, 0, 0.5);
   opacity: 0.7;
-  margin: 20px 0;
-  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: 200px;
   font-size: medium;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-@media (max-width: 650px) {
-  .wrapper {
-    margin: auto;
 
-    width: 90%;
-  }
-  textarea {
-    min-width: 0;
-  }
-}
 #output {
   resize: none;
+}
+div.submit {
+  display: grid;
+  place-items: center;
 }
 button {
   max-width: 100px;
@@ -63,18 +60,23 @@ button {
   cursor: pointer;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: thin solid #70602a;
+  margin: auto;
 }
 footer {
   background-color: #f9d564;
-  margin-block: 1rem;
+  margin-block: auto 0;
   text-align: center;
+  padding: 1rem;
 }
 p {
   line-height: 1.25rem;
-  margin-bottom: 1rem;
-  max-width: 500px;
-  margin: auto;
 }
 a {
-  padding: 0.5rem;
+  display: block;
+  padding-top: 0.2rem;
+}
+@media (max-width: 650px) {
+  .wrapper {
+    width: 95%;
+  }
 }
