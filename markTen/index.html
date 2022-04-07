@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark10 - Cash Register Manager</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cash Register Manager</h1>
+    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+    <form>
+
+        <label for="bill_amount">Bill Amount</label>
+        <input type="number" name="" id="bill_amount" placeholder="Bill Amount" autocomplete='off'>
+
+        <label for="amount_given" class="amount_given">Cash Given</label>
+        <input type="number" name="" class="amount_given" id="amount_given" placeholder="Cash Given" autocomplete="off">
+
+        <div class="buttons">
+            <button type="submit" class="getnotes">Check</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <div class="table"></div>
+    <footer>
+        <p>© | <span class="year"></span> | Muthukumar M</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/muthukumar_4420/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100005672054689" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/muthu-kumar-b56466190/" target="_blank"><i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Muthukumar-Muthu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Muthuku91451976" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

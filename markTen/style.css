@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height: 100vh; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  color: #f7fbea;
+}
+h1 {
+  margin: 0.75em;
+  text-align: center;
+}
+p {
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+form {
+  margin-inline: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1em;
+}
+div.buttons {
+  display: grid;
+  grid-auto-flow: column;
+}
+input {
+  width: 25%;
+  min-width: 200px;
+  margin: 1em auto;
+  padding: 0.8em;
+}
+.amount_given {
+  display: none;
+}
+button {
+  width: 20%;
+  min-width: min-content;
+  max-width: max-content;
+  padding: 0.5em 0.75em;
+  margin: 0.2em 1em;
+  cursor: pointer;
+  background: #f7fbea;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  border: none;
+}
+
+table {
+  margin: 0.2em auto;
+  border-collapse: collapse;
+  border: thin solid #191d0e;
+}
+th,
+tr {
+  width: 200px;
+  text-align: center;
+  padding: 0.8em;
+}
+td,
+th,
+tr {
+  border: thin solid #191d0e;
+}
+td {
+  padding: 0.5em 0;
+}
+footer {
+  margin-block: auto 0;
+}
+footer i {
+  margin: 15px 10px;
+  color: black;
+  font-size: 2em;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: thick solid #2f4858;
+  border-radius: 5px;
+}
