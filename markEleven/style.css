@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #5b2c5f,
+    #b23d61,
+    #ea7042,
+    #ebbd12
+  );
+  color: wheat;
+}
+
+h1 {
+  margin: 0.75em;
+  text-align: center;
+}
+p {
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+form {
+  margin-inline: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1em;
+}
+div.buttons {
+  display: grid;
+  grid-auto-flow: column;
+}
+label {
+  font-size: large;
+}
+input {
+  width: 25%;
+  min-width: 200px;
+  margin: 1em auto;
+  padding: 0.8em;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.2em;
+  font-size: large;
+}
+
+button {
+  width: 20%;
+  min-width: min-content;
+  max-width: max-content;
+  padding: 0.5em 0.75em;
+  margin: 0.2em 1em;
+  cursor: pointer;
+  background: #f7fbea;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  border: none;
+}
+
+.notification {
+  text-align: center;
+  margin: 2em auto;
+  width: 25%;
+  min-width: 200px;
+  min-height: min-content;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+footer {
+  text-align: center;
+  margin-block: auto 0;
+}
+footer i {
+  margin: 15px 10px;
+  color: black;
+  font-size: 2em;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
