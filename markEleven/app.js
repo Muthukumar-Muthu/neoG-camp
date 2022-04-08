@@ -3,7 +3,15 @@ document.querySelector(".year").innerText = new Date().getFullYear();
 const form = document.querySelector("form");
 const dateInput = document.querySelector("#date");
 const numberInput = document.querySelector("#number");
+const noticeBanner = document.querySelector(".banner");
+const close = document.querySelector(".cross");
+document.querySelector(".notice").addEventListener("click", () => {
+  noticeBanner.style.display = "grid";
+});
 
+close.addEventListener("click", () => {
+  noticeBanner.style.display = "none";
+});
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   submitHandler();
