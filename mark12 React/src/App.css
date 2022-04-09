@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  text-align: center;
+  margin-block: auto 0;
+}
+footer i {
+  margin: 15px 10px;
+  color: black;
+  font-size: 2em;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
