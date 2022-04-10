@@ -16,3 +16,9 @@ form.addEventListener("submit", (e) => {
 function checkInput(h, b) {
   return h == false || b == false;
 }
+function alert(input) {
+  console.log(input);
+  const not = document.querySelector(".notification");
+  not.style.display = "block";
+  not.value = input;
+}

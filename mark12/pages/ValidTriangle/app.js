@@ -25,3 +25,8 @@ const checkInput = (...number) => {
   });
   return true;
 };
+function alert(input) {
+  const not = document.querySelector(".notification");
+  not.style.display = "block";
+  not.value = input;
+}

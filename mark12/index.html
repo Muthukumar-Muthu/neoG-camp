@@ -5,10 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mark12 Triangle</title>
+    <title>mark12 Play With Triangle</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs'  preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M 0%2c93 C 57.6%2c106.6 172.8%2c154.4 288%2c161 C 403.2%2c167.6 460.8%2c118.2 576%2c126 C 691.2%2c133.8 748.8%2c202.4 864%2c200 C 979.2%2c197.6 1036.8%2c113.4 1152%2c114 C 1267.2%2c114.6 1382.4%2c185.2 1440%2c203L1440 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c469 C 96%2c449 288%2c351.8 480%2c369 C 672%2c386.2 768%2c570.6 960%2c555 C 1152%2c539.4 1344%2c343.8 1440%2c291L1440 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+            color: white;
+        }
+
+        h1 {
+            margin-block: 1em;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            margin-block: 2em;
+            color: red;
+            text-align: center;
+            background-color: #000080;
+            padding: 0.5em 1em;
+            transition: all 0.5s;
+
+        }
+
+        li:hover {
+            transform: scale(0.75);
+        }
+
+        li a {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            letter-spacing: 0.1em;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer i {
+            margin: 15px 10px;
+            color: black;
+            font-size: 2em;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Play With Triangle</h1>
     <ul>
         <li><a href="pages/Hypotenuse/">Check Hypotenuse</a></li>
         <li><a href="pages/Quiz/">Triangle Quiz</a></li>
@@ -16,6 +83,21 @@
         <li><a href="pages/ValidTriangle/">Check your triangle</a></li>
         <li><a href="pages/Area/">Calculate Area</a></li>
     </ul>
+    <footer>
+        <p>© | <span class="year"></span> | Muthukumar M </p>
+        <script>
+            document.querySelector('.year').innerHTML = new Date().getFullYear()
+        </script>
+        <div class="socials">
+            <a href="https://www.instagram.com/muthukumar_4420/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100005672054689" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/muthu-kumar-b56466190/" target="_blank"><i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Muthukumar-Muthu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Muthuku91451976" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

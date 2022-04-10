@@ -28,8 +28,12 @@ function setAngles() {
   const two = parseInt(getNumber(max - one, min));
   firstAngle.value = one;
   secondAngle.value = two;
-  console.log(180 - one - two);
 }
 function getNumber(max, min) {
   return Math.random() * (max - min) + min;
+}
+function alert(input) {
+  const not = document.querySelector(".notification");
+  not.style.display = "block";
+  not.value = input;
 }

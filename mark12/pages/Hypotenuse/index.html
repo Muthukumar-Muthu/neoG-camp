@@ -6,16 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M-7.861473342691581 208.37087399333143L78.80946434206916 271.46728407033993 90.2303796290829 178.45139344834936z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M488.26029679592205 284.4321439876188L622.3113725345837 233.121281814297 526.1936532489342 152.46893901210726z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M572.9350306437041 196.5145966345052L646.0443852955123 286.9732649337292 684.1314718323592 192.70441776145051z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M960.612%2c517.101C992.476%2c515.432%2c1018.257%2c495.379%2c1035.609%2c468.602C1055.076%2c438.56%2c1071.661%2c402.449%2c1055.658%2c370.427C1038.363%2c335.82%2c999.299%2c318.793%2c960.612%2c318.534C921.439%2c318.272%2c882.657%2c335.061%2c863.339%2c369.141C844.251%2c402.816%2c849.386%2c444.896%2c870.651%2c477.241C889.963%2c506.615%2c925.506%2c518.94%2c960.612%2c517.101' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M986.1940051690851 18.264304689555235L901.8533256502517-1.2072754292586545 882.3817455314378 83.13340408957478 966.7224250502712 102.60498420838867z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M299.3811913135619 294.3857471645056L305.4037135174201 471.6928401907371 438.336364799978 391.8188450521245z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            color: white;
+
+        }
+
+        a {
+            color: white;
+        }
+
+
+
+        .container {
+            text-align: center;
+            padding: 1em 2em;
+            margin: 5em auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1,
+        p,
+        form {
+            margin: 1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 200px;
+            margin-inline: auto;
+        }
+
+        input {
+            margin-block: 1em;
+            padding: 0.5em 0.9em;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 0.5em 0.75em;
+
+        }
+
+        .notification {
+            display: none;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="">
-        <input type="number" placeholder="Base" name="" step="0.01" id="base">
-        <input type="number" placeholder="Perpendicular" name="" step="0.01" id="perpendicular">
-        <button type="submit">Get Hypotenuse</button>
-        <button type="reset">Reset</button>
-    </form>
+    <div class="container">
+        <h1>Get Your Hypotenuse</h1>
+        <p>Enter sides a and b of a right-angled triangle to find the hypotenuse.</p>
+        <form>
+            <input type="number" placeholder="Base" name="" step="0.01" id="base">
+            <input type="number" placeholder="Perpendicular" name="" step="0.01" id="perpendicular">
+            <div>
+                <button type="submit">Get Hypotenuse</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <input type="text" readonly class="notification">
+        <a href="/index.html">Back To Home</a>
+    </div>
     <script src="app.js"></script>
 </body>
 

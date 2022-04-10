@@ -12,3 +12,10 @@ form.addEventListener("submit", (e) => {
   }
   alert(score);
 });
+
+function alert(score) {
+  const data = "Your score is - " + score;
+  const not = document.querySelector(".notification");
+  not.style.display = "block";
+  not.value = data;
+}
