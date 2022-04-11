@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark13 Is your birthday a palindrome</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Palindrome Birthday!</h1>
+    <form action="">
+        <label for="date">Enter your birthday date:</label>
+        <input type="date" name="" id="date">
+        <button type="submit">Check</button>
+        <button type="reset">reset</button>
+    </form>
+    <div class="notification"></div>
+    <footer>
+        <p>© | <span class="year"></span> | Muthukumar M </p>
+        <script>
+            document.querySelector('.year').innerHTML = new Date().getFullYear()
+        </script>
+        <div class="socials">
+            <a href="https://www.instagram.com/muthukumar_4420/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100005672054689" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/muthu-kumar-b56466190/" target="_blank"><i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Muthukumar-Muthu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Muthuku91451976" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
