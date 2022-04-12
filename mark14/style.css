@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e1e1e;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5em;
+}
+input {
+  background-color: inherit;
+  border: 3px solid #2563eb;
+  padding: 0.8em 0.25em;
+  margin: 2em auto;
+  font-size: larger;
+  display: block;
+  border-radius: 5px;
+  color: white;
+  padding-left: 0.5em;
+}
+button {
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  padding: 0.5em 0.85em;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 500;
+  margin: 0.5em;
+}
+.show {
+  margin-block: 2em;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
